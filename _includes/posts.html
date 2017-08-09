@@ -1,0 +1,11 @@
+<a class="post media" href="{{ post.url }}">
+	<img class="thumbnail d-flex mr-3" src="{{ post.thumbnail }}" alt="{{ post.title }}">
+	<div class="media-body">
+		{% for category in post.categories %}
+			<span class="category float-right badge bg-{{ category }}">{{ category }}</span>
+		{% endfor %}
+		<h5 class="title mt-0 h6">{{ post.title }}</h5>
+		<span class="text-muted">{{ post.content | strip_html | truncatewords: 10 }}</span><br />
+		<span class="date">{{ post.date | date_to_string }}</span>
+	</div>
+</a>

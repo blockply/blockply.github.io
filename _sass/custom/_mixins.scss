@@ -1,0 +1,14 @@
+$categories: (
+  games: $green,
+  wallets: $blue,
+  exchanges: darken($yellow, 3%)
+);
+
+@each $key, $value in $categories {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+  .text-#{$key} {
+    color: $value;
+  }
+}

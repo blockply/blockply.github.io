@@ -1,0 +1,21 @@
+.categories {
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: $black;
+    font-size: $font-size-sm;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    span {
+      border-radius: $border-radius-sm;
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}

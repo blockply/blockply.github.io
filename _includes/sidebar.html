@@ -1,0 +1,9 @@
+<a class="btn btn-warning btn-block mb-3" href="https://docs.google.com/forms/d/1gIW9TWOOQWJ5-O2tRzlNRClfZEyX1rufCZRpZT7qTzA" target="_blank" role="button">Submit a Link</a>
+
+<ul class="categories list-unstyled">
+  {% for category in site.categories %}
+    <li>
+      <a href="/category/{{ category | first }}"><span class="bg-{{ category | first }}"></span> {{ category | first }}</a>
+    </li>
+  {% endfor %}
+</ul>

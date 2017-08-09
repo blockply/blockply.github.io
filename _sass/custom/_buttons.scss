@@ -1,0 +1,29 @@
+.btn-twitter,
+.btn-facebook,
+.btn-gplus,
+.btn-linkedin,
+.btn-pinterest {
+
+  &,
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}
+
+
+.btn-twitter {
+  background-color: #55ACEE;
+}
+.btn-facebook {
+  background-color: #3B5998;
+}
+.btn-gplus {
+  background-color: #DD4B39;
+}
+.btn-linkedin {
+  background-color: #0976B4;
+}
+.btn-pinterest {
+  background-color: #CC2127;
+}

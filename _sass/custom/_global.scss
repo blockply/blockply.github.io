@@ -1,0 +1,15 @@
+body {
+  overflow-y: scroll;
+}
+
+.btn:focus {
+  color: $white;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.text-lg {
+  font-size: 18px;
+}

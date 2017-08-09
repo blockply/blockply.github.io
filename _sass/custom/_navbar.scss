@@ -1,0 +1,21 @@
+.navbar {
+  border-bottom: 1px solid $gray-lighter;
+  background: $white;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  font-weight: bold;
+
+  img {
+    margin-top: -6px;
+    margin-bottom: -5px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar form input {
+    width: 150px;
+    margin-right: 10px;
+  }
+}
