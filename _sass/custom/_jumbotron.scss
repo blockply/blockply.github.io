@@ -2,7 +2,10 @@
   border-radius: 0;
   margin-bottom: 0;
   border-bottom: 1px solid $gray-lighter;
-  display: none;
+
+  h1 {
+    font-weight: bold;
+  }
 
   p:last-child {
     margin-bottom: 0;
