@@ -1,23 +1,27 @@
 #posts {
-  background: lighten($gray-lightest, 50%);
-  border: 1px solid $gray-lighter;
+  // border: 1px solid $gray-lighter;
 }
 
 .post {
   padding: 15px;
   text-decoration: none;
-  border-radius: $border-radius;
+  border-radius: 0;
   border-bottom: 1px solid $gray-lighter;
-  transition: all .15s;
+  transition: all .25s;
+  background: $white;
 
   &,
   &:hover {
     color: $gray-dark;
-    background: $white;
+  }
+
+  &:hover:not(.single) {
+    background: lighten($yellow, 45%);
+    transition: all .25s;
   }
 
   &.single {
-    border: 1px solid $gray-lighter;
+    // border: 1px solid $gray-lighter;
     margin-bottom: 2rem;
 
     img.thumbnail {

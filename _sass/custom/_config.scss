@@ -142,7 +142,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $gray-lightest;
+$body-bg:       $white;
 $body-color:    $gray-dark;
 $inverse-bg:    $gray-dark;
 $inverse-color: $gray-lighter;
@@ -182,7 +182,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1120px
+  xl: 1040px
 );
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
