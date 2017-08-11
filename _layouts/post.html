@@ -2,25 +2,26 @@
 layout: default
 ---
 
-<article class="post single media">
-	<img class="thumbnail d-flex mr-3" src="{{ page.thumbnail }}" alt="{{ page.title }}">
-	<div class="media-body">
+<article class="post single">
+	<div class="row">
+		<div class="col-md-6">
+			<h2 class="title mt-0 mb-2 h4">{{ page.title }}</h2>
 
+			<span class="text-muted">{{ page.content }}</span>
+			<span class="date">{{ page.date | date_to_string }}</span>
+
+			<div class="share mt-1 mb-2">
+				<a class="btn btn-sm btn-warning" href="{{ page.external }}" target="_blank" title="{{ page.title }}"><i class="fa fa-external-link"></i> Open App</a>
+				<a class="btn btn-sm btn-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook"></i> Share</a>
+				<a class="btn btn-sm btn-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i> Tweet</a>
+			</div>
+		</div>
+		<div class="col-md-6">
 		{% if page.preview %}
 			<a href="{{ page.external }}" target="_blank">
-				<img src="{{ page.preview }}" alt="{{ page.title }}" class="float-lg-right preview" />
+				<img src="{{ page.preview }}" alt="{{ page.title }}" class="preview" />
 			</a>
 		{% endif %}
-
-		<h2 class="title mt-0 h4">{{ page.title }}</h2>
-
-		<span class="text-muted">{{ page.content }}</span>
-		<span class="date">{{ page.date | date_to_string }}</span>
-		
-		<div class="share mt-1">
-			<a class="btn btn-sm btn-warning" href="{{ page.external }}" target="_blank" title="{{ page.title }}"><i class="fa fa-external-link"></i> Open App</a>
-			<a class="btn btn-sm btn-facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook"></i> Share</a>
-			<a class="btn btn-sm btn-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i> Tweet</a>
 		</div>
 	</div>
 </article>

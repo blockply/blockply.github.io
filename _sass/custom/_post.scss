@@ -1,14 +1,13 @@
-#posts {
-  // border: 1px solid $gray-lighter;
-}
-
 .post {
-  padding: 15px;
   text-decoration: none;
   border-radius: 0;
   border-bottom: 1px solid $gray-lighter;
   transition: all .25s;
   background: $white;
+
+  &:not(.single) {
+    padding: 15px;
+  }
 
   &,
   &:hover {
@@ -21,7 +20,6 @@
   }
 
   &.single {
-    // border: 1px solid $gray-lighter;
     margin-bottom: 2rem;
 
     img.thumbnail {
@@ -49,7 +47,8 @@
   }
 
   .title {
-    color: black;
+    color: $black;
+    font-weight: 600;
   }
 
   .date {
@@ -61,10 +60,5 @@
     border-radius: $border-radius;
     width: 100%;
     margin-bottom: 10px;
-
-    @include media-breakpoint-up(lg) {
-      max-width: 320px;
-      margin: 0 0 10px 10px;
-    }
   }
 }
