@@ -3,7 +3,7 @@ layout: default
 ---
 <p>Posts related to: {{ page.title }}</p>
 
-<section id="posts">
+<section id="posts" class="category">
   {% for post in site.categories[page.category] %}
     {% include posts.html post=post %}
   {% endfor %}
