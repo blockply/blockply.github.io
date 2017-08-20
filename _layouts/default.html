@@ -18,17 +18,18 @@ layout: compress
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="manifest" href="/manifest.json">
 
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
   <header role="banner">
   	{% include header.html %}
+		{% include categories.html %}
   </header>
 
-  <section role="main">
-    {% include main.html %}
+  <section role="main" class="content">
+		{% include content.html %}
   </section>
 
   <footer role="content-info">
@@ -44,6 +45,6 @@ layout: compress
 		ga('create', 'UA-104443080-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	
+
 </body>
 </html>

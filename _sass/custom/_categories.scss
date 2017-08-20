@@ -1,7 +1,13 @@
 .navbar-categories {
-  background: lighten($gray-lighter, 3%);
+  background: $white;
 
-  a {
-    text-transform: capitalize;
+  .navbar-nav {
+    a.nav-link,
+    .active>.nav-link {
+      text-transform: capitalize;
+      font-weight: 600;
+      color: $gray;
+      font-size: 0.8rem;
+    }
   }
 }

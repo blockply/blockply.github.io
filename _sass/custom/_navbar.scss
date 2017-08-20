@@ -1,9 +1,18 @@
 .navbar {
-  border-bottom: 1px solid $gray-lighter;
-  background: $white;
+  border: 0;
+  border-radius: 0;
+  background: $orange;
 
   .container {
     padding: 0 8px;
+  }
+
+  &.navbar-main .container {
+    padding: 8px 8px;
+
+    .nav-link {
+      font-size: 1rem;
+    }
   }
 }
 

@@ -182,7 +182,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1000px
+  xl: 920px
 );
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
@@ -205,7 +205,7 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:       $font-family-sans-serif;
@@ -320,10 +320,10 @@ $table-border-color:            $gray-lighter;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-x:                  1rem;
-$btn-padding-y:                  .5rem;
+$btn-padding-x:                  1.1rem;
+$btn-padding-y:                  .65rem;
 $btn-line-height:                1.25;
-$btn-font-weight:                $font-weight-normal;
+$btn-font-weight:                $font-weight-bold;
 $btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075);
 $btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25);
 $btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125);
@@ -364,8 +364,8 @@ $btn-block-spacing-y:            .5rem;
 $btn-toolbar-margin:             .5rem;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:              $border-radius;
-$btn-border-radius-lg:           $border-radius-lg;
+$btn-border-radius:              $border-radius-sm;
+$btn-border-radius-lg:           $border-radius;
 $btn-border-radius-sm:           $border-radius-sm;
 
 $btn-transition:                 none;
@@ -738,8 +738,8 @@ $badge-color:                 $white;
 $badge-link-hover-color:      $white;
 $badge-font-size:             75%;
 $badge-font-weight:           $font-weight-bold;
-$badge-padding-x:             .4em;
-$badge-padding-y:             .25em;
+$badge-padding-x:             .45em;
+$badge-padding-y:             .35em;
 
 $badge-pill-padding-x:        .6em;
 // Use a higher than normal value to ensure completely rounded edges when

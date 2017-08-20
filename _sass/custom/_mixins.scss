@@ -1,7 +1,7 @@
 $categories: (
   games: $green,
-  wallets: $blue,
-  exchanges: darken($yellow, 3%)
+  wallets: $orange,
+  exchanges: $blue
 );
 
 @each $key, $value in $categories {

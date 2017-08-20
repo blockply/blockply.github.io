@@ -1,5 +1,9 @@
 footer {
-  border-top: 1px solid $gray-lighter;
-  padding: 10px 0;
+  padding: 16px 0;
   font-size: $font-size-sm;
+  background: $white;
+
+  p {
+    margin-bottom: 0;
+  }
 }
