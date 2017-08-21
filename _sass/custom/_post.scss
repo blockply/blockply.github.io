@@ -11,11 +11,6 @@
     color: $gray-dark;
   }
 
-  &:hover:not(.single) {
-    background: lighten($yellow, 45%);
-    transition: all .25s;
-  }
-
   &.single {
     margin-bottom: 2rem;
     border-radius: $border-radius-sm;
@@ -31,7 +26,12 @@
     width: 64px;
   }
 
-  &:last-child:not(.single) {
+  &:first-child {
+    border-top-left-radius: $border-radius-sm;
+    border-top-right-radius: $border-radius-sm;
+  }
+
+  &:last-child {
     border-bottom: 0;
     border-bottom-left-radius: $border-radius-sm;
     border-bottom-right-radius: $border-radius-sm;
@@ -57,14 +57,7 @@
 
   .preview {
     border: 1px solid lighten($gray-light, 30%);
-    border-radius: $border-radius;
     width: 100%;
     margin-bottom: 10px;
   }
-}
-
-.related .post:first-child,
-.category .post:first-child {
-  border-top-left-radius: $border-radius-sm;
-  border-top-right-radius: $border-radius-sm;
 }

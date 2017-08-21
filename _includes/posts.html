@@ -6,6 +6,6 @@
 		{% endfor %}
 		<h5 class="title mt-0 h6">{{ post.title }}</h5>
 		<span class="text-muted">{{ post.content | strip_html | truncatewords: 14 }}</span><br />
-		<span class="date">{{ post.date | date_to_string }}</span>
+		<span class="date timeago" datetime="{{ post.date }}" title="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</span>
 	</div>
 </a>
