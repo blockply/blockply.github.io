@@ -1,5 +1,9 @@
 .sidebar {
   background: $white;
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: $border-radius-sm;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+  }
 }
