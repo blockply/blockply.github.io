@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CoinExchange"
-date: 2017-08-12
+date: 2017-08-12 00:00:00
 categories: exchanges
 thumbnail: "/files/coinexchange_thumb.png"
 preview: "/files/coinexchange.png"

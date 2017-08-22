@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MyEtherWallet"
-date: 2017-08-19
+date: 2017-08-19 00:00:00
 categories: wallets
 thumbnail: "/files/myetherwallet_thumb.png"
 preview: "/files/myetherwallet.png"

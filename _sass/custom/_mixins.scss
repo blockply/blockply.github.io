@@ -1,7 +1,9 @@
 $categories: (
   games: $green,
   wallets: $orange,
-  exchanges: $blue
+  exchanges: $blue,
+  storage: $green,
+  privacy: $red
 );
 
 @each $key, $value in $categories {
