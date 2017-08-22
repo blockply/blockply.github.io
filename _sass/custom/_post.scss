@@ -5,10 +5,13 @@
   transition: all .25s;
   background: $white;
   padding: 1.25rem;
+  color: $gray-dark;
 
   &,
-  &:hover {
-    color: $gray-dark;
+  &:hover,
+  & a,
+  & a:hover {
+    text-decoration: none;
   }
 
   &.single {
@@ -42,10 +45,6 @@
     text-decoration: none;
   }
 
-  .category {
-    text-transform: capitalize;
-  }
-
   .title {
     color: $black;
     font-weight: 600;
@@ -55,8 +54,20 @@
     font-size: .9375rem;
   }
 
-  .date {
-    font-size: .875rem;
+  .footer {
+    font-size: 80%;
+  }
+
+  .category a {
+    text-transform: capitalize;
+    color: $gray-dark;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 
   .preview {

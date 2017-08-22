@@ -10,7 +10,15 @@
 
 .btn-twitter {
   background-color: #55ACEE;
+
+  &:hover {
+    background-color: darken(#55ACEE, 10%);
+  }
 }
 .btn-facebook {
   background-color: #3B5998;
+
+  &:hover {
+    background-color: darken(#3B5998, 10%);
+  }
 }

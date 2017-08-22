@@ -8,7 +8,9 @@ layout: default
 			<h1 class="title mt-0 mb-2 h5">{{ page.title }}</h1>
 
 			<span class="text-muted">{{ page.content }}</span>
-			<span class="date">{{ page.date | date_to_string }}</span>
+			<div class="footer">
+				<span class="date">{{ page.date | date_to_string }}</span>
+			</div>
 
 			<div class="share mt-1 mb-2">
 				<a class="btn btn-sm btn-warning" href="{{ page.external }}" target="_blank" title="{{ page.title }}"><i class="icon-link-ext"></i> Open App</a>
