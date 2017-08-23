@@ -1,8 +1,34 @@
+https://www.producthunt.com/topics/cryptocurrencies
+https://www.reddit.com/r/CryptoCurrency/comments/671sly/cryptocurrency_categories_groups/
+https://www.reddit.com/r/CryptoCurrency/comments/6u03z2/which_types_or_cryptocurrencies_or_what_coins/
+https://www.reddit.com/r/CryptoCurrency/comments/5vjhwi/categories_of_cryptocurrency/
+
 Privacy
   Civic
-Storage
+  Zcash
+  Monero
+  Dash
+Cloud
   Sia
   Storj
-  Maid
+  MaidSafe
 Mobile
   MobileGo
+Browsers
+  Basic Attention Token
+  Toshi
+Healthcare
+  PTOY
+Meme
+  MEME
+
+Privacy And Safety Focused Coins- Dash, Monero, Zcash, MaidSafe, etc
+Alternate Use Focused Coins- Ethereum, Namecoin, etc
+Charity Coins- Curecoin, devcoin, etc LULZ Coins- Bottlecaps, Doge, POT, PepeCoin, coinye, etc
+Transactional/Wealth Management Focused Coins- Bitcoin, Litecoin, FeatherCoin, etc
+
+---
+
+Monero, ShadowCash, Zcash and others offer "anonymity" and "untraceable" transactions. This was a big selling point for Bitcoin previously.
+
+---
