@@ -1,4 +1,5 @@
 name: Blockply
+twitter_handle: blockply
 markdown: kramdown
 permalink: /:categories/:title
 paginate: 8

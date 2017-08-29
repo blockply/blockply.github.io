@@ -2,9 +2,14 @@
 layout: default
 ---
 <section id="posts">
+
 	{% for post in paginator.posts %}
-    {% include posts.html post=post %}
-  {% endfor %}
+		{% include posts.html post=post %}
+		{% if forloop.index == 4 %}
+			{% include twitter.html %}
+		{% endif %}
+	{% endfor %}
+
 </section>
 
 {% include pagination.html %}
