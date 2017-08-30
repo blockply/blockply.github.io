@@ -2,7 +2,7 @@
 layout: post
 title: Ethereum Classic
 date: 2017-08-29 20:15:00
-categories: app
+categories: platform
 thumbnail: /files/ethereum-classic_thumb.png
 preview: /files/ethereum-classic.png
 external: https://ethereumclassic.github.io/

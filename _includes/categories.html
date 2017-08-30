@@ -5,7 +5,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="/">All</a>
         </li>
-        {% for category in site.categories %}
+
+        {% assign sorted_categories = (site.categories | sort:0) %}
+        {% for category in sorted_categories %}
           <li class="nav-item active">
             <a class="nav-link" href="/category/{{ category | first }}">{{ category | first }}</a>
           </li>
