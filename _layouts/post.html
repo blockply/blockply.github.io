@@ -19,11 +19,9 @@ layout: default
 			</div>
 		</div>
 		<div class="col-md-6">
-		{% if page.preview %}
 			<a href="{{ page.external }}" target="_blank">
-				<img src="{{ page.preview }}" alt="{{ page.title }}" class="preview" />
+				<img src="/files/{{ page.slug }}.png" alt="{{ page.title }}" class="preview" />
 			</a>
-		{% endif %}
 		</div>
 	</div>
 </article>

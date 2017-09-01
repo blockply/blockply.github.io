@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Patientory
+slug: patientory
 date: 2017-08-23 19:00:00
 categories: healthcare
-thumbnail: /files/patientory_thumb.png
-preview: /files/patientory.png
 external: https://www.patientory.com/
 ---
 
