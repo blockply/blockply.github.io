@@ -3,7 +3,7 @@
     display: inline-block;
     font-size: 80%;
     &.positive {
-      color: #2ECC40;
+      color: darken(#2ECC40, 10%);
     }
     &.negative {
       color: #FF4136;
