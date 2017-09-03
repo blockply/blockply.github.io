@@ -14,13 +14,11 @@ function getPriceData(slug) {
     return response.json();
   })
   .then(function (body) {
-    //doSomething with body;
-
-    var priceChangeIcon = (body[0].percent_change_24h > 0) ? '<span class="icon-up-dir"></span>' : '<span class="icon-down-dir"></span>';
-
+    var isPricePositive = (body[0].percent_change_24h > 0) ? true : false;
+    var priceChangeIcon = isPricePositive ? '<span class="icon-up-dir"></span>' : '<span class="icon-down-dir"></span>';
+    getFirstOrDie('price-change').classList.add(isPricePositive ? 'positive' : 'negative');
     getFirstOrDie('price-change').innerHTML = priceChangeIcon + body[0].percent_change_24h + '%';
     getFirstOrDie('price-btc').innerHTML = body[0].price_btc + ' BTC';
-    // getFirstOrDie('price-usd').innerHTML = body[0].price_usd;
     getFirstOrDie('price-usd').innerHTML = '$' + parseFloat(body[0].price_usd).toFixed(2);
   });
 }

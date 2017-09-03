@@ -2,7 +2,12 @@
   .price-change {
     display: inline-block;
     font-size: 80%;
-    color: red;
+    &.positive {
+      color: #2ECC40;
+    }
+    &.negative {
+      color: #FF4136;
+    }
   }
 
   .price-btc {
