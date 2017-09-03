@@ -1,0 +1,25 @@
+.price {
+  .price-change {
+    display: inline-block;
+    font-size: 80%;
+    color: red;
+  }
+
+  .price-btc {
+    display: none;
+  }
+
+  .price-usd {
+    display: inline-block;
+  }
+
+  &:hover {
+    .price-btc {
+      display: inline-block;
+    }
+
+    .price-usd {
+      display: none;
+    }
+  }
+}

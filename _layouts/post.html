@@ -6,6 +6,11 @@ layout: default
 	<div class="row">
 		<div class="col-md-6">
 			<h1 class="title mt-0 mb-2 h5">{{ page.title }}</h1>
+			<div class="price mb-1" data-id="{{ page.slug }}">
+				<div class="price-btc" title="Price in BTC"></div>
+				<div class="price-usd" title="Price in USD"></div>
+				<div class="price-change" title="% Change 24h"></div>
+			</div>
 
 			<span class="text-muted">{{ page.content }}</span>
 			<div class="footer">
