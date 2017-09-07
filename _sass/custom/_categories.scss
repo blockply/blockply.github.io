@@ -1,5 +1,10 @@
 .navbar-categories {
   background: $white;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .navbar-nav {
     a.nav-link,
